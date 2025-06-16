@@ -1,0 +1,1438 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0 0 0 0;
+    background: linear-gradient(to bottom, #1eabfc, #2d56eb, #2d3aad);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+#main_page {
+    position: absolute;
+    display: inline;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1eabfc, #2d56eb, #2d3aad);
+}
+
+#profilePicture {
+    width: 13vw;
+    height: 13vw;
+    position: absolute;
+    top: 2.7vw;
+    left: 2.7vw;
+    border-radius: 1.5vw;
+}
+
+.profilePicture2 {
+    width: 13vw;
+    height: 13vw;
+    position: absolute;
+    top: 2.7vw;
+    left: 2.7vw;
+    border-radius: 1.5vw;
+    background-color: red;
+    opacity: 0;
+}
+
+#user_name, #level {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    position: absolute;
+}
+
+#user_name {
+    font-weight: bold;
+    font-size: 4.1vw;
+    top: 2.4vw;
+    left: 16.8vw;
+}
+
+#level {
+    font-size: 3.2vw;
+    top: 8.2vw;
+    left: 16.8vw;
+}
+
+.progress_new_level_container {
+    height: 1.2vw; 
+    width: 19.8vw; 
+    border-radius: 1vw; 
+    background-color: #d9d9d9;
+    overflow: hidden; 
+    position: absolute; 
+    top: 13.5vw; 
+    left: 18.7vw; 
+}
+
+#progress_new_level {
+    height: 100%; 
+    width: 10%;
+    background: linear-gradient(90deg, #9ef5e0, #4ed1c1); 
+}
+
+#settings {
+    width: 7.2vw;
+    position: absolute;
+    top: 1.6vh;
+    right: 3vw;
+}
+
+#telegram_icon {
+    width: 7.5vw;
+    position: absolute;
+    top: 1.6vh;
+    right: 12.5vw;
+}
+
+.main_board {
+    width: 88vw;
+    height: 14vh;
+    position: absolute;
+    left: 5.5vw;
+    top: 22vw;
+    border-radius: 3vw;
+    border-top: 0.4vh solid #1c7ae5;
+    border-right: 0.35vh solid #1c7ae5; 
+    border-left: 0.35vh solid #1c7ae5; 
+    border-bottom: 0.7vh solid #1c7ae5; 
+    box-shadow: 0 0.8vw 2.5vw rgba(0, 13, 131, 0.4); 
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.MineCoin_container, .MiningPower_container, .ProfitCoins_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.MiningPower_container, .ProfitCoins_container {
+    height: 6vh;
+    width: 44vw;
+    position: absolute;
+    top: 8vh;
+}
+
+.MineCoin_container {height: 8vh; width: 88vw}
+.MiningPower_container {left: 0vw}
+.ProfitCoins_container {right: 0vw}
+
+#CoinBalance_main, #MiningPower_main, #ProfitMЕC_main, .text_per_block {
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    filter: brightness(0.96);
+    border: none;
+    font-weight: bold;
+}
+
+#CoinBalance_main {font-size: 4.5vh; margin-left: 2vw}
+#MiningPower_main, #ProfitMЕC_main, .text_per_block {font-size: 2.6vh}
+
+.img_CoinBalance {height: 4.5vh}
+#img_lightning {height: 2.95vh}
+.MINECOIN {height: 2.8vh}
+
+.line1 {
+    width: 74vw;
+    height: 0.2vh;
+    background-color: #2a7ede;
+    position: absolute;
+    top: 8vh;
+    left: 7vw;
+}
+
+.line2 {
+    width: 0.2vh;
+    height: 4vh;
+    background-color: #2a7ede;
+    position: absolute;
+    top: 9vh;
+    left: 44vw;
+}
+
+#pickaxe { 
+    height: 40vw; 
+    z-index: 2; 
+    position: absolute; 
+    top: 40vh; 
+    left: 10vw; 
+} 
+
+#cube { 
+    height: 45vw; 
+    z-index: 1; 
+    position: absolute; 
+    top: 42vh; 
+    right: 10vw; 
+} 
+
+.text_before_block_mining {
+    border: none;  
+    color: white;  
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2.3vh;
+    font-weight: bold;
+    position: absolute;
+    bottom: 18.3vh;
+    left: 5.5vw;
+}
+
+#timer_before_block_mining {
+    border: none;  
+    color: white;  
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2.7vh;
+    font-weight: bold;
+    position: absolute;
+    bottom: 18.1vh;
+    right: 5.5vw;
+}
+
+.time_new_block_board_container {
+    height: 3.3vh; 
+    width: 90vw; 
+    border-radius: 4vw; 
+    background-color: #d9d9d9;
+    overflow: hidden; 
+    position: absolute; 
+    bottom: 13vh; 
+    left: 5vw; 
+}
+
+#time_new_block_board {
+    height: 100%; 
+    width: 0%;
+    background: linear-gradient(90deg, #952dfc, #770fff); 
+    filter: brightness(1.2);
+}
+
+#menu1, #menu2, #menu3, #menu4, #menu5, #menu {
+    width: 100vw;
+    height: 10.5vh;
+    z-index: 10;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    bottom: -0.5vh;
+    background: linear-gradient(to bottom, #4A90E2, #32477d);
+    border-radius: 8vw 8vw 0 0;
+}
+#menu1, #menu2, #menu4, #menu5 {display: none}
+
+#icon_container_friends, #icon_container_info_about_project, #icon_container_main, #icon_container_miners, #icon_container_tasks {
+    width: 20vw;
+    height: 10.5vh;
+    z-index: 3;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+}
+
+#icon_container_friends2, #icon_container_info_about_project2, #icon_container_main2, #icon_container_miners2, #icon_container_tasks2 {
+    width: 20vw;
+    height: 10.5vh;
+    z-index: 3;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);}
+
+#icon_container_info_about_project, #icon_container_info_about_project2 {border-radius: 8vw 0 0 0; left: 0vw;}
+#icon_container_miners, #icon_container_miners2 {left: 20vw;}
+#icon_container_main, #icon_container_main2 {left: 40vw;}
+#icon_container_friends, #icon_container_friends2 {left: 60vw;}
+#icon_container_tasks, #icon_container_tasks2 {border-radius: 0 8vw 0 0; left: 80vw;}
+
+#friends_icon, #info_about_project_icon, #main_icon, #miners_icon, #tasks_icon {
+    height: 4vh;
+    width: auto;
+    z-index: 4;
+    position: relative;
+    top: 1.5vh;
+}
+
+.name_icon, .name_icon2 {
+    display: inline;
+    width: 20vw;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 3.4vw;
+    z-index: 4;
+    position: relative;
+    top: 1.4vh;
+    filter: brightness(0.97)
+}
+.name_icon{color: #ffffff}
+.name_icon2{color: #104c85}
+
+
+/* ИНФОРМАЦИЯ О ПРОЕКТЕ */
+#info_about_project_page {
+    width: 100vw;
+    height: 100vh;
+    display: none; 
+    justify-content: center; 
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    animation: info_about_project_page_animation 2.5s forwards; 
+}
+
+@keyframes info_about_project_page_animation {
+    from {background-color: rgba(0, 0, 0, 0.45)}
+    to {background-color: rgba(0, 0, 0, 0.15)}
+}
+
+#slogan {
+    width: 90vw;
+    position: absolute;
+    top: 35vh;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    font-weight: bold;
+    font-size: 9vw;
+    background: linear-gradient(to bottom, #f7992e, #fd7216, #f7992e, #fd7216, #f7992e, #fd7216); 
+    filter: brightness(5);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-shadow: 0px 0.2vw 0.4vw rgba(0, 0, 0, 0.8); 
+    animation: slogan_animation 2.5s forwards; 
+}
+    
+@keyframes slogan_animation {
+    from {opacity: 0}
+    to {opacity: 0.9}
+}
+
+/* МАЙНЕРЫ */
+#miners_page {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: linear-gradient(to bottom, #1eabfc, #2d56eb, #2d3aad);
+}
+
+#wallet_disconnect, #wallet_connect {
+    width: 50vw;
+    height: 9.5vw;
+    position: relative; 
+    top: 3.5vw;
+    left: 46.5vw; 
+    background: rgba(30, 47, 66, 0.175);
+    border: 0.25vw solid rgba(255, 255, 255, 0.7);
+    border-radius: 2.5vw;
+    font-size: 3.05vw;
+    color: white;
+    filter: brightness(0.96);
+    font-weight: bold;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+#animation_miners_page{
+    position: absolute;
+    top: 15vw;
+    width: 100vw;
+    height: 80vw;
+    overflow-x: hidden; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#animation_miners_page.animate {
+    animation: animation_miners_page 0.7s forwards; 
+}
+    
+@keyframes animation_miners_page {
+    0% {transform: translateY(-20vw); opacity: 0.5}
+    50% {transform: translateY(2.5vw);  opacity: 1}
+    75% {transform: translateY(0vw); opacity: 1}
+    90% {transform: translateY(0.3vw); opacity: 1}
+    100% {transform: translateY(0vw); opacity: 1}
+}
+
+.shop {
+    position: absolute;
+    top: 5vw;
+    left: 23.02vw;
+    height: 40vw;
+}
+
+.main_text_on_miners_page{
+    width: 100vw;
+    border: none;  
+    color: white;  
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 6.5vw;
+    font-weight: bold;
+    position: absolute;
+    top: 48vw;
+    text-shadow: 0px 0.4vw 0.8vw rgba(0, 0, 0, 0.7);
+    filter: brightness(2);
+}
+
+.text_on_miners_page {
+    width: 88%;
+    font-size: 4vw;
+    border: none; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0); 
+    position: absolute;
+    top: 59vw;
+    left: 6vw;
+    text-shadow: 0px 1.5px 3px rgba(0, 0, 0, 0.7);
+}
+
+.miners_section { 
+    position: absolute;
+    top: 89.5vw;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 4vw; 
+    padding-top: 5vw; 
+    padding-bottom: 12.5vh; 
+    background: linear-gradient(to bottom, #097ce8, #232982);  
+    border-radius: 6vw 6vw 0 0; 
+    width: 100vw; 
+}
+
+#miners_section.animate {
+    animation: miners_section 0.7s forwards; 
+}
+    
+@keyframes miners_section {
+    0% {transform: translateY(30vw); opacity: 0.5}
+    50% {transform: translateY(-2.5vw); opacity: 1}
+    75% {transform: translateY(0vw); opacity: 1}
+    90% {transform: translateY(-0.3vw); opacity: 1}
+    100% {transform: translateY(0vw); opacity: 1}
+}
+
+.miner_container {
+    width: 100%;
+    position: relative;
+    opacity: 0; 
+}
+
+.miner_container.animate {animation: show-miner 0.3s forwards}
+
+@keyframes show-miner {
+    0% {transform: translateY(20vh); opacity: 0}
+    75% {transform: translateY(-1vh); opacity: 1}
+    100% {transform: translateY(0); opacity: 1}
+}
+
+#container1, #container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container1 {margin-top: 12vh}
+#container2 {margin-top: 2vh}
+
+.CoinBalance {
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    filter: brightness(0.96);
+    border: none;
+    font-size: 12vw;
+    font-weight: bold;
+    margin-left: 2vw;
+}
+
+.MiningPower {
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    filter: brightness(0.96);
+    border: none;
+    font-size: 8vw;
+    font-weight: bold;
+    padding-bottom: 6vw;
+}
+
+.png_MiningPower{padding-bottom: 6vw;}
+
+.background_miners1, .background_miners2 {
+    box-shadow: 0.5vw 1.5vw 2.5vw rgba(0, 0, 0, 1);
+    opacity: 0.15;
+    width: 45vw;
+    height: auto;
+    border-radius: 3.5vw;
+}
+
+.background_miners1 {margin-left: 3vw;}
+.background_miners2 {margin-right: 3vw;}
+
+.GPUImage, .GPUImage2 {
+    border-radius: 1.5vw;
+    position: absolute;
+    top: 4vw}
+.GPUImage {left: 9vw}
+.GPUImage2 {right: 8.6vw}
+
+.nameGPU1,  .nameGPU2, .nameGPU3, .nameGPU4 {
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    filter: brightness(0.935);
+    border: none;
+    font-size: 5vw;
+    font-weight: bold;
+    position: absolute;
+}
+.nameGPU1 {top: 21vw; left: 3.5vw; right: 0}
+.nameGPU2 {top: 21vw; left: 0; right: 3.5vw}
+.nameGPU3 {top: 19vw; left: 3.5vw; right: 0}
+.nameGPU4 {top: 19vw; left: 0; right: 3.5vw}
+
+
+.MiningPowerGPU1, .MiningPowerGPU2, .MiningPowerGPU3, .MiningPowerGPU4 {
+    background: rgba(0, 0, 0, 0);
+    color: #b9cbed;
+    filter: brightness(1.12);
+    border: none;
+    font-size: 4vw;
+    position: absolute;
+}
+.MiningPowerGPU1 {top: 27.5vw; left: 3.2vw; right: 0}
+.MiningPowerGPU2 {top: 27.5vw; left: 0; right: 3.8vw}
+.MiningPowerGPU3 {top: 25.5vw; left: 3.2vw; right: 0}
+.MiningPowerGPU4 {top: 25.5vw; left: 0; right: 3.8vw}
+
+
+.countMiners1, .countMiners2, .countMiners3, .countMiners4 {
+    background: rgba(0, 0, 0, 0);
+    color: #b9cbed;
+    filter: brightness(1.15);
+    border: none;
+    font-weight: bold;
+    position: absolute;
+}
+.countMiners1 {top: 39.5vw; left: 0; right: 22.7vw}
+.countMiners2 {top: 39.5vw; left: 0; right: 29vw}
+.countMiners3 {top: 37.5vw; left: 0; right: 22.7vw}
+.countMiners4 {top: 37.5vw; left: 0; right: 29vw}
+
+
+.imgMC1, .imgMC2, .imgMC3, .imgMC4 {position: absolute}
+.imgTON1, .imgTON2, .imgTON3, .imgTON4 {position: absolute}
+
+.imgMC1 {left: 24vw; top: 37.3vw}
+.imgMC2 {left: 20.5vw; top: 37.3vw}
+.imgMC3 {left: 24vw; top: 35.3vw}
+.imgMC4 {left: 20.5vw; top: 35.3vw}
+
+.imgTON1 {left: 24vw;top: 43.3vw}
+.imgTON2 {left: 20.5vw;top: 43.3vw}
+.imgTON3 {left: 24vw;top: 41.3vw}
+.imgTON4 {left: 20.5vw;top: 41.3vw}
+
+
+.price_per_STARS1, .price_per_STARS2, .price_per_STARS3, .price_per_STARS4, 
+.price_per_TON1, .price_per_TON2, .price_per_TON3, .price_per_TON4 {
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    filter: brightness(0.935);
+    border: none;
+    font-size: 5vw;
+    text-align: left;
+    font-weight: bold;
+    position: absolute}
+
+.price_per_STARS1 {top: 36.5vw; left: 28.5vw}
+.price_per_STARS2 {top: 36.5vw; left: 25vw}
+.price_per_STARS3 {top: 34.5vw; left: 28.5vw}
+.price_per_STARS4 {top: 34.5vw; left: 25.2vw}
+.price_per_TON1 {top: 42.5vw; left: 28.5vw}
+.price_per_TON2 {top: 42.5vw; left: 25vw}
+.price_per_TON3 {top: 40.5vw; left: 28.5vw}
+.price_per_TON4 {top: 40.5vw; left: 25.2vw}
+
+
+/* Стили для всплывающего окна при покупке */
+#container_window_buy {    
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+    position: fixed;
+    top: 40vh;
+}
+
+#container_window_buy.show {
+    animation: animation-appearance-window-buy 0.5s forwards;
+}
+
+@keyframes animation-appearance-window-buy {
+    0% {transform: translateY(60vh)}
+    100% {transform: translateY(0)}
+}
+
+#container_window_buy.invisible {
+    animation: animation-close-window-buy 0.5s forwards;
+}
+
+@keyframes animation-close-window-buy {
+    0% {transform: translateY(0)}
+    100% {transform: translateY(61vh)}
+}
+
+#window_buy {
+    background: linear-gradient(to bottom, #0272ab, #152d59); 
+    display: none;
+    width: 100vw;
+    height: 61vh;
+    border-radius: 10vw 10vw 0 0;
+}
+
+#circle {
+    background-color: rgb(107, 174, 255);
+    display: none;
+    width: 9vw;
+    height: 9vw;
+    border-radius: 4.5vw;
+    opacity: 0.35;
+    position: absolute;
+    top: 4.5vw;
+    left: 86.5vw;
+}
+
+#x {
+    display: none;
+    width: 3.5vw;
+    height: auto;
+    position: absolute;
+    top: 7.3vw;
+    left: 89.3vw;
+}
+
+#miner {
+    display: none;
+    width: 30vh;
+    height: auto;
+    border-radius: 2vh;
+    position: absolute;
+    top: 3vh;
+}
+
+#name_miner {
+    display: none;
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    filter: brightness(0.92);
+    font-size: 5vh;
+    border: none;
+    font-weight: bold;
+    position: absolute;
+    top: 18.2vh;
+}
+
+#container_hashrate {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 29.7vh;
+}
+
+#hashrate {
+    display: none;
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    filter: brightness(0.915);
+    font-size: 2.5vh;
+    border: none;
+    position: absolute;
+    top: 26vh;
+}
+
+#lightning {
+    display: none;
+    width: 3vh;
+    height: auto;
+    padding-bottom: 2.8vh;
+}
+
+#mining_power {
+    display: none;
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    filter: brightness(0.915);
+    font-size: 2.5vh;
+    border: none;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 3vh;
+}
+
+#button_buy1, #button_buy2 {
+    background-color: #3985db;
+    opacity: 0.47;
+    display: none;
+    width: 87.5vw;
+    height: 7.5vh;
+    border-radius: 4vw;
+    position: absolute;
+}
+
+#container_buy_per_stars, #container_buy_per_TON {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    position: absolute;
+}
+
+#buy_per_stars, #buy_per_TON {
+    display: none;
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    filter: brightness(0.915);
+    font-size: 3.5vh;
+    border: none;
+    font-weight: bold;
+}
+
+#img_MineCoin_window_buy, #img_TON_window_buy {
+    display: none;
+    height: 3.5vh;
+}
+
+/* ДРУЗЬЯ */
+
+#friends_page {
+    width: 100vw;
+    height: 352vw;
+    display: none;  
+    overflow-x: hidden; 
+    background: linear-gradient(to bottom, #1eabfc, #3860f2, #2d3aad); 
+}  
+
+#animation_friends_page1 {  
+    width: 100vw; 
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+} 
+ 
+#animation_friends_page2 { 
+    width: 100vw; 
+    display: flex; 
+    margin-top: 68vw; 
+}
+
+.friends_img { 
+    position: absolute; 
+    top: 6.5vw;
+    height: 30vw; 
+}
+
+.invite_your_friends_text {  
+    width: 100%; 
+    font-size: 6.5vw; 
+    font-weight: bold; 
+    border: none;  
+    color: white;  
+    background-color: rgba(0, 0, 0, 0);  
+    position: absolute; 
+    top: 43vw; 
+    text-shadow: 0px 0.6vw 1.2vw rgba(0, 0, 0, 0.7);
+}
+
+.and_get_more_reward_text { 
+    width: 100%;
+    font-size: 4vw;
+    border: none; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0); 
+    position: absolute;
+    top: 54.5vw;
+    text-shadow: 0px 1.5px 3px rgba(0, 0, 0, 0.7);
+}
+
+.for_the_invitation_text {
+    width: 100%;
+    font-size: 4vw;
+    border: none; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0); 
+    position: absolute;
+    top: 59.5vw;
+    text-shadow: 0px 1.5px 3px rgba(0, 0, 0, 0.7);
+}
+
+.info_block1 {
+    width: 40vw;
+    height: 35vw;
+    position: absolute;
+    top: 1.5vw;
+    left: 4vw;
+    background: rgba(30, 47, 66, 0.175);
+    border-radius: 3vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.cont_info_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img_lightning_in_info_block {width: 5.5vw}
+
+.text2 {
+    font-size: 5.75vw;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 1.25px 2.5px rgba(0, 0, 0, 0.7);
+}
+
+.text, .text3, .text4 {
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    text-shadow: 0px 1.25px 2.5px rgba(0, 0, 0, 0.7);
+}
+.text {font-size: 3.7vw}
+.text3 {font-size: 4.05vw}
+.text4 {font-size: 4.25vw}
+
+.info_block2 {
+    width: 48vw;
+    height: 35vw;
+    position: absolute;
+    top: 1.5vw;
+    right: 4vw;
+    background: rgba(30, 47, 66, 0.175);
+    border-radius: 3vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.cont{z-index: 2}
+
+.gradient-text1, .gradient-text2 { 
+    border: none; 
+    background: linear-gradient(90deg, #ffcc00, #ff6600); 
+    filter: brightness(2.5);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-shadow: 0px 1.25px 2.5px rgba(0, 0, 0, 0.7); 
+}
+.gradient-text1 {font-size: 3.7vw}
+.gradient-text2 {font-size: 4.5vw; font-weight: bold}
+
+.telegram_star {
+    perspective: 1000px; 
+    transform: rotateX(30deg) rotateY(45deg);
+    width: 8vw;
+    z-index: 1;
+    position: absolute;
+    top: 3vw;
+    right: 4.5vw;
+}
+
+.info_block3, .info_block4 {
+    width: 92vw;
+    height: 28vw;
+    border-radius: 3vw;
+    position: absolute;
+    right: 4vw;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.info_block3 {top: 40.5vw;
+    background: rgba(30, 47, 66, 0.175)}
+.info_block4 {top: 72.5vw;
+    background: rgba(30, 47, 66, 0.1525)}
+
+.lightning_in_info_block {
+    height: 24vw;
+    position: absolute;
+    top: 2vw;
+    left: 2.5vw;
+}
+
+.text_cont, .text_cont2 { 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+} 
+
+.text_cont {
+    left: 7vw;
+    width: 75vw;
+}
+
+.text_cont2 { 
+    right: 14vw;
+    width: 60vw;
+} 
+
+.gifts {
+    height: 24vw;
+    position: absolute;
+    top: 2vw;
+    right: 2.5vw;
+}
+
+.your_referral_link_text {
+    width: 100%;
+    font-size: 3.8vw;
+    border: none; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0); 
+    position: absolute;
+    top: 105.75vw;
+    left: 5vw;
+    text-shadow: 0px 1.5px 3px rgba(0, 0, 0, 0.7);
+    text-align: left;
+}
+
+#referal_link {
+    border: none;
+    width: 90vw;
+    height: 12vw;
+    color: white;
+    background: rgba(30, 47, 66, 0.175);
+    position: absolute;
+    top: 113vw;
+    left: 5vw;
+    font-size: 3.6vw;
+    border-radius: 6vw;
+    /*border: 0.35vh solid #5d87e8;*/
+}
+
+#invite_friends {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4.5vw;
+    color: white;
+    background: linear-gradient(to bottom, #b57ffa, #9054de);
+    font-size: 5vw;
+    font-weight: bold;
+    width: 75vw;
+    height: 14vw;
+    position: absolute;
+    top: 129vw;
+    left: 4vw;
+}
+
+#invite_friends.animate {
+    animation: animation_button_invite_friends 2.6s forwards;
+}
+
+@keyframes animation_button_invite_friends {
+    0% {transform: scale(1)}
+    25% {transform: scale(1.08)}
+    50% {transform: scale(1)}
+    75% {transform: scale(1.08)}
+    100% {transform: scale(1)}
+}
+
+.add-friend {
+    width: 6.5vw;
+    margin-left: 2.5vw;
+}
+
+.copy_link {
+    width: 14vw;
+    height: 14vw;
+    border-radius: 4vw;
+    background: linear-gradient(to bottom, #b57ffa, #9054de);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 129vw;
+    right: 4vw;
+}
+
+.copy_icon {
+    width: 9vw;
+    position: relative;
+}
+
+.info_block5 {
+    width: 42vw;
+    height: 28vw;
+    position: absolute;
+    top: 220vw;
+    left: 5vw;
+    background: rgba(30, 47, 66, 0.175);
+    border-radius: 3vw;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.total_friends_text {
+    width: 100%;
+    font-size: 4.2vw;
+    border: none; 
+    color: white; 
+    position: absolute;
+    top: 3.5vw;
+    background-color: rgba(0, 0, 0, 0); 
+    filter: brightness(0.97);
+    text-align: center;
+}
+
+.total_friends_container {
+    display: flex;
+    align-items: center; 
+    margin-top: 12vw; 
+}
+
+#total_friends {
+    font-size: 8.5vw;
+    border: none; 
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);  
+    margin-right: 1.5vw; 
+}
+
+#MiningPower_with_friends {
+    font-size: 5.3vw;
+    border: none; 
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);  
+    margin-right: 1.5vw; 
+}
+
+.friends_img2 {
+    width: 10vw;
+}
+
+.info_block6 {
+    width: 42vw;
+    height: 28vw;
+    position: absolute;
+    top: 220vw;
+    right: 5vw;
+    background: rgba(30, 47, 66, 0.175);
+    border-radius: 3vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#my_friends {
+    width: 94vw;
+    height: 100vw;
+    background: rgba(30, 47, 66, 0.15);
+    border-radius: 3vw 3vw 0vw 0vw;
+    position: absolute;
+    top: 252vw;
+    right: 3vw;
+}
+
+#no_friends {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no_friends_img {
+    position: absolute;
+    top: 13vw;
+    height: 26vw;
+    opacity: 0.5;
+}
+
+#no_friends_text {
+    width: 70vw;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 4vw;
+    position: absolute;
+    top: 45vw;
+    filter: brightness(0.75);
+}
+
+#listFriends {
+    display: none;
+    flex-direction: column; 
+    gap: 1.5vw;
+    padding: 1.5vw; 
+}
+
+.your_friends_text {
+    width: 91vw;
+    height: 14vw;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    text-shadow: 0px 0.6vw 1.2vw rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: white;
+    font-size: 6vw;
+    align-items: center;
+}
+
+.info_friend {
+    width: 91vw;
+    height: 19vw;
+    display: flex;
+    align-items: center;
+    position: relative; 
+    background-color: rgba(255, 255, 255, 0.05); 
+    border-radius: 2vw; 
+}
+
+.profilePicture_friend {
+    width: 14vw;
+    height: 14vw;
+    border-radius: 1.5vw;
+    margin-left: 3.5vw; 
+}
+
+.name_friend {
+    width: 46vw;
+    height: 15vw;
+    border: none;
+    text-align: left;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 4.1vw;
+    margin-left: 2vw; 
+}
+
+.bonus_with_friend_info {
+    width: 25vw;
+    height: 12vw;
+    position: absolute;
+    right: 3.5vw;
+}
+
+.bonus_with_friend_text {
+    width: 25vw;
+    border: none;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    top: 1vw;
+}
+
+.bonus_mining_power_with_friend {
+    width: 25vw;
+    border: none;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 4.5vw;
+    font-weight: bold; 
+    position: absolute;
+    bottom: 1vw;
+}
+
+#animation_friends_page1.animate {
+    animation: animation_friends_page1 0.7s forwards; 
+}
+    
+@keyframes animation_friends_page1 {
+    0% {transform: translateY(-15vw); opacity: 0.5}
+    50% {transform: translateY(2.5vw);  opacity: 1}
+    75% {transform: translateY(0vw); opacity: 1}
+    90% {transform: translateY(0.3vw); opacity: 1}
+    100% {transform: translateY(0vw); opacity: 1}
+}
+
+#animation_friends_page2.animate {
+    animation: animation_friends_page2 0.7s forwards; 
+}
+    
+@keyframes animation_friends_page2 {
+    0% {transform: translateY(30vw); opacity: 0.5}
+    50% {transform: translateY(-2.5vw); opacity: 1}
+    75% {transform: translateY(0vw); opacity: 1}
+    90% {transform: translateY(-0.3vw); opacity: 1}
+    100% {transform: translateY(0vw); opacity: 1}
+}
+
+.info_board {
+    display: none;
+    align-items: center;
+    width: 95vw;
+    height: 14vw;
+    position: fixed;
+    top: 4.5vw;
+    left: 0vw; 
+    background: linear-gradient(to bottom, #00e340, #00c738);
+    border-radius: 4vw;
+    z-index: 1000;
+    opacity: 0;
+}
+
+.text_in_info_board {
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    filter: brightness(0.98);
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+.info_about_reward_text_in_info_board {
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 3.25vw;
+}
+
+.info_board.show {
+    animation: info_board_animation 0.4s forwards; 
+}
+
+@keyframes info_board_animation {
+    0% {transform: translateX(100vw); opacity: 1;}
+    80% {transform: translateX(-2.5vw); opacity: 1;}
+    100% {transform: translateX(2.5vw); opacity: 1;}
+}
+
+.info_board.close {
+    animation: info_board_close_animation 0.75s forwards;
+}
+
+@keyframes info_board_close_animation {
+    0% {transform: translateX(2.5vw); opacity: 0.999;}
+    30% {transform: translateX(-10vw); opacity: 0.999;}
+    99% {transform: translateX(100vw); opacity: 0.999;}
+    100% {transform: translateX(100vw); opacity: 0;}
+}
+
+
+/* ЗАДАНИЯ */
+
+#tasks_page {
+    width: 100vw;
+    height: 472vw;
+    display: none;  
+    overflow-x: hidden; 
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #1eabfc, #3860f2);
+    flex-direction: column;
+}  
+
+.scroll_img {
+    position: absolute; 
+    top: 6.5vw;
+    height: 44vw; 
+}
+
+.tasks_list_text, .title_text, .task_description, .reward_description{
+    border: none;  
+    color: white;  
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tasks_list_text {
+    font-size: 6.5vw; 
+    font-weight: bold;   
+    position: absolute; 
+    top: 54.5vw; 
+    text-shadow: 0px 0.6vw 1.2vw rgba(0, 0, 0, 0.7);
+}
+
+.title_text {
+    font-size: 4.3vw;
+    font-weight: bold;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    text-shadow: 0px 0.4vw 0.8vw rgba(0, 0, 0, 0.7);
+    filter: brightness(2);
+}
+
+#everyday_tasks {
+    position: absolute;
+    top: 68vw;
+    height: 94vw;
+}
+
+#special_tasks {
+    position: absolute;
+    top: 170vw;
+    height: 72vw;
+}
+
+#social_media_activity_tasks {
+    position: absolute;
+    top: 250vw;
+    height: 53vw;
+}
+
+#friends_tasks {
+    position: absolute;
+    top: 311vw;
+    height: 72vw;
+}
+
+.task_board {
+    width: 92vw;
+    height: 20vw;
+    background: rgba(30, 47, 66, 0.15);
+    border-radius: 3vw;
+    position: relative;
+    top: 8vw;
+    margin-bottom: 2vw;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    opacity: 1;
+}
+
+#task_board_block_animate1{
+    width: 100vw; 
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+}
+
+#task_board_block_animate1.animate {
+    animation: task_board_block_animate1 0.7s forwards; 
+}
+    
+@keyframes task_board_block_animate1 {
+    0% {top: -15vw; opacity: 0.5}
+    50% {top: 2.5vw; opacity: 1}
+    75% {top: 0vw; opacity: 1}
+    90% {top: 0.3vw; opacity: 1}
+    100% {top: 0vw; opacity: 1}
+}
+
+#task_board_block_animate2{
+    width: 92vw;
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+}
+
+#task_board_block_animate2.animate {animation: task_board_block_animate2 0.7s forwards}
+
+@keyframes task_board_block_animate2 {
+    0% {top: 40vw; opacity: 0.25}
+    50% {top: -2.5vw; opacity: 1}
+    75% {top: 0vw; opacity: 1}
+    90% {top: -0.3vw; opacity: 1}
+    100% {top: 0vw; opacity: 1}
+}
+
+#task_board_text.animate {animation: task_board_text 5s forwards}
+
+@keyframes task_board_text {
+    0% {opacity: 0.25}
+    100% {opacity: 1}
+}
+
+.text_container_in_task_board {
+    width: 58vw;
+    position: absolute;
+    left: 20vw;
+    top: 2vw;
+}
+
+.task_description {
+    font-size: 3.85vw; /* 3.9vw */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    text-align: left;
+}
+
+.reward-container {
+    display: flex; 
+    align-items: center; 
+    position: absolute;
+}
+
+.lightning_reward_icon {
+    width: 3.5vw; 
+    margin-right: -1vw; 
+    margin-left: -0.5vw; 
+    vertical-align: middle;
+}
+
+.reward_description {
+    font-size: 3.45vw; /* 3.5vw */
+    text-align: left;
+    position: relative;
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+.icon_task {
+    width: 16vw;
+    height: 16vw;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 3vw;
+    position: absolute;
+    top: 2vw;
+    left: 2.5vw;
+}
+
+
+#count_ads_viewd, .count_friends {
+    background-color: rgba(0,0,0,0); 
+    color: white; 
+    position: absolute; 
+    height: 3vw;
+    top: 7vw; 
+    right: 3vw;
+    font-size: 3.75vw;
+    border: none;
+}
+
+.go_to_task_img {
+    display: inline;
+    height: 4.5vw; 
+    position: absolute; 
+    top: 7.75vw; 
+    right: 5vw
+}
+
+.loading_animation {
+    position: absolute;
+    top: 7.25vw; 
+    right: 5vw; 
+    width: 4.5vw; 
+    height: 4.5vw;
+    border: 1.2vw solid #eee;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.mark_completed_task {
+    display: none;
+    height: 9vw; 
+    position: absolute; 
+    top: 5.5vw; 
+    right: 2.75vw;
+}

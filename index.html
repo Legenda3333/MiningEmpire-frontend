@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tonconnect/ui@2.0.12/dist/tonconnect-ui.min.js"></script>
+    <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<!-- МЕНЮ -->
+<div id="menu">
+    <div id="menu1">
+        <div id="icon_container_info_about_project2" onclick="open_info_about_project_section()">
+            <img src="images/menu/map2.png" id="info_about_project_icon">
+            <button class="name_icon2" id="name_info_about_project_icon">О проекте</button>
+        </div>
+        <div id="icon_container_miners" onclick="open_miners_section()">
+            <img src="images/menu/miners_icon.png" id="miners_icon">
+            <button class="name_icon" id="name_icon_miners">Майнеры</button>
+        </div>
+        <div id="icon_container_main" onclick="open_main_section()">
+            <img src="images/menu/main_icon.png" id="main_icon">
+            <button class="name_icon" id="name_icon_main">Главная</button>
+        </div>
+        <div id="icon_container_friends" onclick="open_friends_section()">
+            <img src="images/menu/friends_icon.png" id="friends_icon"> 
+            <button class="name_icon" id="name_icon_friends">Друзья</button>
+        </div>
+        <div id="icon_container_tasks" onclick="open_tasks_section()">
+            <img src="images/menu/tasks_icon.png" id="tasks_icon"> 
+            <button class="name_icon" id="name_icon_tasks">Задания</button>
+        </div>
+    </div>
+
+    <div id="menu2">
+        <div id="icon_container_info_about_project" onclick="open_info_about_project_section()">
+            <img src="images/menu/map.png" id="info_about_project_icon">
+            <button class="name_icon" id="name_info_about_project_icon">О проекте</button>
+        </div>
+        <div id="icon_container_miners2" onclick="open_miners_section()">
+            <img src="images/menu/miners_icon2.png" id="miners_icon">
+            <button class="name_icon2" id="name_icon_miners">Майнеры</button>
+        </div>
+        <div id="icon_container_main" onclick="open_main_section()">
+            <img src="images/menu/main_icon.png" id="main_icon">
+            <button class="name_icon" id="name_icon_main">Главная</button>
+        </div>
+        <div id="icon_container_friends" onclick="open_friends_section()">
+            <img src="images/menu/friends_icon.png" id="friends_icon"> 
+            <button class="name_icon" id="name_icon_friends">Друзья</button>
+        </div>
+        <div id="icon_container_tasks" onclick="open_tasks_section()">
+            <img src="images/menu/tasks_icon.png" id="tasks_icon"> 
+            <button class="name_icon" id="name_icon_tasks">Задания</button>
+        </div>
+    </div>
+
+    <div id="menu3">
+        <div id="icon_container_info_about_project" onclick="open_info_about_project_section()">
+            <img src="images/menu/map.png" id="info_about_project_icon">
+            <button class="name_icon" id="name_info_about_project_icon">О проекте</button>
+        </div>
+        <div id="icon_container_miners" onclick="open_miners_section()">
+            <img src="images/menu/miners_icon.png" id="miners_icon">
+            <button class="name_icon" id="name_icon_miners">Майнеры</button>
+        </div>
+        <div id="icon_container_main2" onclick="open_main_section()">
+            <img src="images/menu/main_icon2.png" id="main_icon">
+            <button class="name_icon2" id="name_icon_main">Главная</button>
+        </div>
+        <div id="icon_container_friends" onclick="open_friends_section()">
+            <img src="images/menu/friends_icon.png" id="friends_icon"> 
+            <button class="name_icon" id="name_icon_friends">Друзья</button>
+        </div>
+        <div id="icon_container_tasks" onclick="open_tasks_section()">
+            <img src="images/menu/tasks_icon.png" id="tasks_icon"> 
+            <button class="name_icon" id="name_icon_tasks">Задания</button>
+        </div>
+    </div>
+    
+    <div id="menu4">
+        <div id="icon_container_info_about_project" onclick="open_info_about_project_section()">
+            <img src="images/menu/map.png" id="info_about_project_icon">
+            <button class="name_icon" id="name_info_about_project_icon">О проекте</button>
+        </div>
+        <div id="icon_container_miners" onclick="open_miners_section()">
+            <img src="images/menu/miners_icon.png" id="miners_icon">
+            <button class="name_icon" id="name_icon_miners">Майнеры</button>
+        </div>
+        <div id="icon_container_main" onclick="open_main_section()">
+            <img src="images/menu/main_icon.png" id="main_icon">
+            <button class="name_icon" id="name_icon_main">Главная</button>
+        </div>
+        <div id="icon_container_friends2" onclick="open_friends_section()">
+            <img src="images/menu/friends_icon2.png" id="friends_icon"> 
+            <button class="name_icon2" id="name_icon_friends">Друзья</button>
+        </div>
+        <div id="icon_container_tasks" onclick="open_tasks_section()">
+            <img src="images/menu/tasks_icon.png" id="tasks_icon"> 
+            <button class="name_icon" id="name_icon_tasks">Задания</button>
+        </div>
+    </div>
+    
+    <div id="menu5">
+        <div id="icon_container_info_about_project" onclick="open_info_about_project_section()">
+            <img src="images/menu/map.png" id="info_about_project_icon">
+            <button class="name_icon" id="name_info_about_project_icon">О проекте</button>
+        </div>
+        <div id="icon_container_miners" onclick="open_miners_section()">
+            <img src="images/menu/miners_icon.png" id="miners_icon">
+            <button class="name_icon" id="name_icon_miners">Майнеры</button>
+        </div>
+        <div id="icon_container_main" onclick="open_main_section()">
+            <img src="images/menu/main_icon.png" id="main_icon">
+            <button class="name_icon" id="name_icon_main">Главная</button>
+        </div>
+        <div id="icon_container_friends" onclick="open_friends_section()">
+            <img src="images/menu/friends_icon.png" id="friends_icon"> 
+            <button class="name_icon" id="name_icon_friends">Друзья</button>
+        </div>
+        <div id="icon_container_tasks2" onclick="open_tasks_section()">
+            <img src="images/menu/tasks_icon2.png" id="tasks_icon"> 
+            <button class="name_icon2" id="name_icon_tasks">Задания</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- ИНФОРМАЦИЯ О ПРОЕКТЕ -->
+<div id="info_about_project_page">
+    <!--<button id="slogan">Something more than<br>«probably nothing»</button>-->
+    <button id="slogan">Скоро...</button>
+</div>
+
+<!-- ГЛАВНАЯ СТРАНИЦА -->
+<div id="main_page">
+    <img id="profilePicture" src="">
+    <div class="profilePicture2"></div>
+    <button id="user_name"></button>    
+    <button id="level"></button> 
+    <div class="progress_new_level_container">
+        <div id="progress_new_level"></div>
+    </div>
+    <img src="images/settings.png" id="settings" onclick="open_settings_page()">
+    <img src="images/telegram_icon.png" id="telegram_icon" onclick="open_telegram_channel()">
+    <div class="main_board">
+        <div class="MineCoin_container">
+            <img src="images/MiningEmpireCoin.png" class="img_CoinBalance">
+            <button id="CoinBalance_main"></button>
+        </div>
+        <div class="MiningPower_container">
+            <img src="images/lightning.png" id="img_lightning">
+            <button id="MiningPower_main"></button>
+        </div>
+        <div class="ProfitCoins_container">
+            <button id="ProfitMЕC_main"></button>
+            <img src="images/MiningEmpireCoin.png" class="MINECOIN">
+            <button class="text_per_block">/ блок</button>
+        </div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+    </div>
+
+    <img src="images/pickaxe.png" id="pickaxe">
+    <img src="images/cube.png" id="cube">
+
+    <div class="time_new_block_board_container">
+        <div id="time_new_block_board"></div>
+    </div>
+
+    <button class="text_before_block_mining">До добычи блока:</button>
+    <button id="timer_before_block_mining"></button>
+</div>
+
+
+<!-- ДРУЗЬЯ -->
+<div id="friends_page">
+    <div style="width: 100vw; height: 300vw; position: relative;">
+        <div id="animation_friends_page1">
+            <img src="images/friends.png" class="friends_img">
+            <button class="invite_your_friends_text">Приглашайте друзей!</button>
+            <button class="and_get_more_reward_text">И получайте больше бонусных наград за</button>
+            <button class="for_the_invitation_text">каждого приглашённого друга.</button>
+        </div>
+
+        <div id="animation_friends_page2">
+            <div class="info_block1">
+                <div>
+                    <div class="cont_info_block">
+                        <img src="images/lightning.png" class="img_lightning_in_info_block">
+                        <button class="text2">+100 kH/s</button>
+                    </div>
+                    <button class="text">Получите вы и ваш друг</button>
+                </div>
+            </div>
+            <img src="images/star1.png" class="telegram_star">
+
+            <div class="info_block2">
+                <div class="cont">
+                    <div class="cont_info_block">
+                        <img src="images/lightning.png" class="img_lightning_in_info_block">
+                        <button class="text2">+250 kH/s</button>
+                    </div>
+                    <button class="text">Получите вы и ваш друг, если у него есть <span class="gradient-text1">Telegram</span> <span class="gradient-text1">Premium</span></button>
+                </div>
+            </div>
+
+            <div class="info_block3">
+                <img src="images/lightning2.png" class="lightning_in_info_block">
+                <div class="text_cont">
+                    <button class="text3">Получайте <span class="gradient-text2">20%</span> от общей мощности майнинга каждого приглашённого вами друга</button>
+                </div>
+            </div>
+
+            <div class="info_block4" onclick="go_tasks_section()">
+                <img src="images/gifts.png" class="gifts">
+                <div class="text_cont2">
+                    <button class="text4">Ещё больше наград за количество друзей</button>
+                    <img src="images/go_over.png" style="height: 3.7vw; position: relative; right: 3vw;">
+                </div>
+            </div>
+
+            <button class="your_referral_link_text">Ваша реферальная ссылка:</button>
+            <button id="referal_link" onclick="copy_ref_link()"></button>
+            <button id="invite_friends" onclick="share_link()">Пригласить друга
+                <img src="images/add-friend.png" class="add-friend" onclick="share_link()">
+            </button>
+            <div class="copy_link" onclick="copy_ref_link()">
+                <img src="images/copy.png" class="copy_icon" onclick="copy_ref_link()">
+            </div>
+        </div>
+        
+        <div class="info_block5">
+            <button class="total_friends_text">Всего друзей</button>
+            <div class="total_friends_container">
+                <button id="total_friends"></button>
+                <img src="images/friends_img.png" class="friends_img2">
+            </div>
+        </div>
+        
+        <div class="info_block6">
+            <button class="total_friends_text">Награда со всех друзей</button>
+            <div class="total_friends_container">
+                <img src="images/lightning.png" style="height: 7vw;">
+                <button id="MiningPower_with_friends"></button>
+            </div>
+        </div>
+
+        <div id="my_friends">
+            <div id="no_friends">
+                <img src="images/no_friends.png" class="no_friends_img">
+                <button id="no_friends_text">К сожалению, Вы ещё не пригласили ни одного друга</button>
+            </div>
+
+
+            <div id="listFriends">
+                <button class="your_friends_text">Ваши друзья</button>
+            </div>
+
+            <div class="info_board" id="copy_info_board">
+                <img src="images/copy.png" style="width: 8vw; position: absolute; top: 3vw; left: 4vw;">
+                <div style="position: relative; left: 14vw;">
+                    <button class="text_in_info_board">Ссылка успешно скопирована!</button>
+                </div>
+                <img src="images/x.png" style="width: 3.5vw; position: absolute; top: 5.25vw; right: 4.5vw;" onclick="delete_class_copy_info_board()">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- РАЗДЕЛ ПОКУПКИ МАЙНЕРОВ -->
+<div id="miners_page">
+
+    <button id="wallet_disconnect" onclick="connect_wallet()" style="display: flex;">
+        <img src="images/wallet.png" style="height: 6vw;">
+        <span style="flex-grow: 1; text-align: center;">Подключить кошелёк</span>
+        <img src="images/go_over.png" style="height: 2.55vw;">
+    </button>
+    
+    <button id="wallet_connect" onclick="disconnect_wallet()" style="display: none; ">
+        <img src="images/green_check_mark.png" style="height: 6vw;">
+        <span style="flex-grow: 1; text-align: center;">Отключить кошелёк</span>
+        <img src="images/go_over.png" style="height: 2.55vw;">
+    </button>
+
+    <div id="animation_miners_page">
+        <img src="images/shop.png" class="shop">
+        <button class="main_text_on_miners_page">Маркет</button>
+        <button class="text_on_miners_page">Покупка майнеров - самый эффективный способ увеличить добычу монет!</button>
+    </div>
+
+    <div class="miners_section" id="miners_section">
+        <div class="miner_container" onclick="buyMiner1()">
+            <img src="images/background_miners1.png" class="background_miners1">
+            <img src="images/miners/StartMiner.png" class="GPUImage" width="70%">
+            <button class="nameGPU1">StartMiner</button>
+            <button class="MiningPowerGPU1">+1 MH/s</button>
+            <button class="countMiners1" id="CountStartMiner_id"></button>
+            <img src="images/star3.png" class="imgMC1" width="10%">
+            <img src="images/TON.png" class="imgTON1" width="10%">
+            <button class="price_per_STARS1">250</button>
+            <button class="price_per_TON1">1</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner2()">
+            <img src="images/background_miners1.png" class="background_miners2">
+            <img src="images/miners/RedMiner.png" class="GPUImage2" width="70%">
+            <button class="nameGPU2">RedMiner</button>
+            <button class="MiningPowerGPU2">+1.65 MH/s</button>
+            <button class="countMiners2" id="CountRedMiner_id"></button>
+            <img src="images/star3.png" class="imgMC2" width="10%">
+            <img src="images/TON.png" class="imgTON2" width="10%">
+            <button class="price_per_STARS2">375</button>
+            <button class="price_per_TON2">1.5</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner3()">
+            <img src="images/background_miners2.png" class="background_miners1">
+            <img src="images/miners/LGC-200.png" class="GPUImage" width="70%">
+            <button class="nameGPU3">LGC-200</button>
+            <button class="MiningPowerGPU3">+2.5 MH/s</button>
+            <button class="countMiners3" id="CountLGC200_id"></button>
+            <img src="images/star3.png" class="imgMC3" width="10%">
+            <img src="images/TON.png" class="imgTON3" width="10%">
+            <button class="price_per_STARS3">500</button>
+            <button class="price_per_TON3">2</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner4()">
+            <img src="images/background_miners2.png" class="background_miners2">
+            <img src="images/miners/LGC-450.png" class="GPUImage2" width="70%">
+            <button class="nameGPU4">LGC-450</button>
+            <button class="MiningPowerGPU4">+4 MH/s</button>
+            <button class="countMiners4" id="CountLGC450_id"></button>
+            <img src="images/star3.png" class="imgMC4" width="10%">
+            <img src="images/TON.png" class="imgTON4" width="10%">
+            <button class="price_per_STARS4">750</button>
+            <button class="price_per_TON4">3</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner5()">
+            <img src="images/background_miners2.png" class="background_miners1">
+            <img src="images/miners/LGC-550.png" class="GPUImage" width="70%">
+            <button class="nameGPU3">LGC-550</button>
+            <button class="MiningPowerGPU3">+6.3 MH/s</button>
+            <button class="countMiners3" id="CountLGC550_id"></button>
+            <img src="images/star3.png" class="imgMC3" width="10%">
+            <img src="images/TON.png" class="imgTON3" width="10%">
+            <button class="price_per_STARS3">1125</button>
+            <button class="price_per_TON3">4.5</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner6()">
+            <img src="images/background_miners2.png" class="background_miners2">
+            <img src="images/miners/T100.png" class="GPUImage2" width="70%">
+            <button class="nameGPU4">T100</button>
+            <button class="MiningPowerGPU4">+11.25 MH/s</button>
+            <button class="countMiners4" id="CountT100_id"></button>
+            <img src="images/star3.png" class="imgMC4" width="10%">
+            <img src="images/TON.png" class="imgTON4" width="10%">
+            <button class="price_per_STARS4">1875</button>
+            <button class="price_per_TON4">7.5</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner7()">
+            <img src="images/background_miners2.png" class="background_miners1">
+            <img src="images/miners/T100 SUPER.png" class="GPUImage" width="70%">
+            <button class="nameGPU3">T100 SUPER</button>
+            <button class="MiningPowerGPU3">+19.25 MH/s</button>
+            <button class="countMiners3" id="CountT100SUPER_id"></button>
+            <img src="images/star3.png" class="imgMC3" width="10%">
+            <img src="images/TON.png" class="imgTON3" width="10%">
+            <button class="price_per_STARS3">3000</button>
+            <button class="price_per_TON3">12</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner8()">
+            <img src="images/background_miners2.png" class="background_miners2">
+            <img src="images/miners/LGC-800.png" class="GPUImage2" width="70%">
+            <button class="nameGPU4">LGC-800</button>
+            <button class="MiningPowerGPU4">+34 MH/s</button>
+            <button class="countMiners4" id="CountLGC800_id"></button>
+            <img src="images/star3.png" class="imgMC4" width="10%">
+            <img src="images/TON.png" class="imgTON4" width="10%">
+            <button class="price_per_STARS4">5000</button>
+            <button class="price_per_TON4">20</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner9()">
+            <img src="images/background_miners2.png" class="background_miners1">
+            <img src="images/miners/LGC-900.png" class="GPUImage" width="70%">
+            <button class="nameGPU3">LGC-900</button>
+            <button class="MiningPowerGPU3">+54 MH/s</button>
+            <button class="countMiners3" id="CountLGC900_id"></button>
+            <img src="images/star3.png" class="imgMC3" width="10%">
+            <img src="images/TON.png" class="imgTON3" width="10%">
+            <button class="price_per_STARS3">7500</button>
+            <button class="price_per_TON3">30</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner10()">
+            <img src="images/background_miners2.png" class="background_miners2">
+            <img src="images/miners/NeonMiner.png" class="GPUImage2" width="70%">
+            <button class="nameGPU4">NeonMiner</button>
+            <button class="MiningPowerGPU4">+85.5 MH/s</button>
+            <button class="countMiners4" id="CountNeonMiner_id"></button>
+            <img src="images/star3.png" class="imgMC4" width="10%">
+            <img src="images/TON.png" class="imgTON4" width="10%">
+            <button class="price_per_STARS4">11250</button>
+            <button class="price_per_TON4">45</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner11()">
+            <img src="images/background_miners1.png" class="background_miners1">
+            <img src="images/miners/HGC-A1.png" class="GPUImage" width="70%">
+            <button class="nameGPU1">HGC-A1</button>
+            <button class="MiningPowerGPU1">+125 MH/s</button>
+            <button class="countMiners1" id="CountHGC_A1_id"></button>
+            <img src="images/star3.png" class="imgMC1" width="10%">
+            <img src="images/TON.png" class="imgTON1" width="10%">
+            <button class="price_per_STARS1">15625</button>
+            <button class="price_per_TON1">62.5</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner12()">
+            <img src="images/background_miners1.png" class="background_miners2">
+            <img src="images/miners/HGC-A2.png" class="GPUImage2" width="70%">
+            <button class="nameGPU2">HGC-A2</button>
+            <button class="MiningPowerGPU2">+157.5 MH/s</button>
+            <button class="countMiners2" id="CountHGC_A2_id"></button>
+            <img src="images/star3.png" class="imgMC2" width="10%">
+            <img src="images/TON.png" class="imgTON2" width="10%">
+            <button class="price_per_STARS2">18750</button>
+            <button class="price_per_TON2">75</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner13()">
+            <img src="images/background_miners2.png" class="background_miners1">
+            <img src="images/miners/TMiner V-1.png" class="GPUImage" width="70%">
+            <button class="nameGPU3">TMiner V-1</button>
+            <button class="MiningPowerGPU3">+220 MH/s</button>
+            <button class="countMiners3" id="CountTMiner_V1_id"></button>
+            <img src="images/star3.png" class="imgMC3" width="10%">
+            <img src="images/TON.png" class="imgTON3" width="10%">
+            <button class="price_per_STARS3">25000</button>
+            <button class="price_per_TON3">100</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner14()">
+            <img src="images/background_miners2.png" class="background_miners2">
+            <img src="images/miners/RT S22.png" class="GPUImage2" width="70%">
+            <button class="nameGPU4">RT S22</button>
+            <button class="MiningPowerGPU4">+275 MH/s</button>
+            <button class="countMiners4" id="CountRT_S22_id"></button>
+            <img src="images/star3.png" class="imgMC4" width="10%">
+            <img src="images/TON.png" class="imgTON4" width="10%">
+            <button class="price_per_STARS4">30000</button>
+            <button class="price_per_TON4">120</button>
+        </div>
+        <div class="miner_container" onclick="buyMiner15()">
+            <img src="images/background_miners2.png" class="background_miners1">
+            <img src="images/miners/TMiner V-2.png" class="GPUImage" width="70%">
+            <button class="nameGPU3">TMiner V-2</button>
+            <button class="MiningPowerGPU3">+360 MH/s</button>
+            <button class="countMiners3" id="CountTMiner_V2_id"></button>
+            <img src="images/star3.png" class="imgMC3" width="10%">
+            <img src="images/TON.png" class="imgTON3" width="10%">
+            <button class="price_per_STARS3">37500</button>
+            <button class="price_per_TON3">150</button>
+            </div>
+        <div class="miner_container" onclick="buyMiner16()">
+            <img src="images/background_miners2.png" class="background_miners2">
+            <img src="images/miners/TMiner V-3.png" class="GPUImage2" width="70%">
+            <button class="nameGPU4">TMiner V-3</button>
+            <button class="MiningPowerGPU4">+500 MH/s</button>
+            <button class="countMiners4" id="CountTMiner_V3_id"></button>
+            <img src="images/star3.png" class="imgMC4" width="10%">
+            <img src="images/TON.png" class="imgTON4" width="10%">
+            <button class="price_per_STARS4">50000</button>
+            <button class="price_per_TON4">200</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- ОКНО ПОКПКИ МАЙНЕРА -->
+<div id="container_window_buy">
+    <div id="window_buy"></div>
+    <div id="circle"></div>
+    <img src="images/x.png" id="x">
+    <img src="" id="miner">
+    <button id="name_miner"></button>
+    <button id="hashrate">Хешрейт</button>
+    <div id="container_hashrate">
+        <img src="images/lightning.png" id="lightning">
+        <button id="mining_power"></button>
+    </div>
+    <div id="button_buy1"></div>
+    <div id="button_buy2"></div>
+    <div id="container_buy_per_stars">
+        <button id="buy_per_stars"></button>
+        <img src="images/star3.png" id="img_MineCoin_window_buy">
+    </div>
+    <div id="container_buy_per_TON">
+        <button id="buy_per_TON"></button>
+        <img src="images/TON2.png" id="img_TON_window_buy">
+    </div>
+</div>
+
+
+<!-- ИНФО-БЛОК О СТАТУСЕ ТРАНЗАКЦИИ -->
+<div class="info_board" id="transaction_status_info_board">
+    <img src="" id="transaction_status_icon" style="width: 8vw; position: absolute; top: 3vw; left: 4vw;">
+    <div style="position: relative; left: 14vw;">
+        <button class="text_in_info_board" id="text_payment_status"></button>
+    </div>
+    <img src="images/x.png" style="width: 3.5vw; position: absolute; top: 5.25vw; right: 4.5vw;" onclick="delete_class_status_transaction_info_board()">
+</div>
+
+<!-- ЗАДАНИЯ -->
+<div id="tasks_page">
+    <div id="task_board_block_animate1">
+        <img src="images/scroll.png" class="scroll_img">
+        <button class="tasks_list_text">Список заданий</button>
+    </div>
+
+    <div id="task_board_block_animate2">
+    <div id="everyday_tasks">
+        <button class="title_text">Ежедневно</button>
+
+        <div class="task_board" id="quest_daily_reward" onclick="quest_daily_reward()">
+            <div class="icon_task">
+                <img src="images/calendar.png" style="height: 14vw; position: absolute; top: 1vw; left: 1.2vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 2vw">Ежедневный вход</button>
+                <div class="reward-container" style="top: 9vw">
+                    <button class="reward_description">Забери свою награду за вход!</button>
+                </div>               
+            </div>
+            <img src="images/go_over.png" id="go_to_task_img_1-1" class="go_to_task_img">
+            <img src="images/tick.png" id="task_completed_1-1" class="mark_completed_task">
+            <div id="loading_animation_1_1" class="loading_animation" style="display: none;"></div>
+        </div>
+
+        <div class="task_board" id="quest_daily_TON_transaction" onclick="quest_daily_TON_transaction()">
+            <div class="icon_task">
+                <img src="images/TON2.png" style="height: 10.5vw; position: absolute; top: 2.75vw; left: 2.75vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 0.5vw">Совершить транзакцию в сети TON</button>
+                <div class="reward-container" style="top: 10.5vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning.png" class="lightning_reward_icon">
+                        <span style="position: relative; top: 0.15vw;">300 kH/s</span>
+                    </button>
+                </div>  
+            </div>
+            <img src="images/go_over.png" id="go_to_task_img_1-2" class="go_to_task_img">
+            <img src="images/tick.png" id="task_completed_1-2" class="mark_completed_task">
+            <div id="loading_animation_1_2" class="loading_animation" style="display: none;"></div>
+        </div>
+
+        <div class="task_board" id="quest_daily_TGstars_transaction" onclick="quest_daily_TGstars_transaction()">
+            <div class="icon_task">
+                <img src="images/star3.png" style="height: 12vw; position: absolute; top: 2vw; left: 2.3vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 0.5vw">Совершить покупку за Telegram Stars</button>
+                <div class="reward-container" style="top: 10.5vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning.png" class="lightning_reward_icon">
+                        <span style="position: relative; top: 0.15vw;">200 kH/s</span>
+                    </button>
+                </div>  
+            </div>
+            <img src="images/go_over.png" id="go_to_task_img_1-3" class="go_to_task_img">
+            <img src="images/tick.png" id="task_completed_1-3" class="mark_completed_task">
+            <div id="loading_animation_1_3" class="loading_animation" style="display: none;"></div>
+        </div>
+
+        <div class="task_board" id="quest_watch_ads" onclick="quest_watch_ads()">
+            <div class="icon_task">
+                <img src="images/watch-adv.png" style="width: 13vw; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 0.5vw">Посмотреть короткий рекламный ролик</button>
+                <div class="reward-container" style="top: 10.5vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning.png" class="lightning_reward_icon">
+                        <span style="position: relative; top: 0.15vw;">5 kH/s</span>
+                    </button>
+                </div>  
+            </div>
+            <button id="count_ads_viewd"></button>
+            <img src="images/tick.png" id="task_completed_1-4" class="mark_completed_task">
+        </div>
+    </div>
+
+    <div id="special_tasks"> 
+        <button class="title_text">Особое</button>
+
+        <div class="task_board" id="quest_connect_wallet" onclick="quest_connect_wallet()">
+            <div class="icon_task">
+                <img src="images/Wallet2.png" style="height: 11vw; position: absolute; top: 2.5vw; left: 3vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 2vw">Подключить кошелёк</button>
+                <div class="reward-container" style="top: 9vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning.png" class="lightning_reward_icon">
+                        <span style="position: relative; top: 0.15vw;">100 kH/s</span>
+                        <img src="images/lightning3.png" class="lightning_reward_icon" style="margin-right: -0.7vw; margin-left: 0.7vw;">
+                        <span style="position: relative; top: 0.15vw;">+0.5%</span>
+                    </button>
+                </div>  
+            </div>
+            <img src="images/go_over.png" id="go_to_task_img_2-1" class="go_to_task_img">
+            <img src="images/tick.png" id="task_completed_2-1" class="mark_completed_task">
+            <div id="loading_animation_2_1" class="loading_animation" style="display: none;"></div>
+        </div>
+
+        <div class="task_board" id="quest_buy_miner" onclick="quest_buy_miner()">
+            <div class="icon_task">
+                <img src="images/buy_task_icon.png" style="height: 11vw; position: absolute; top: 2.5vw; left: 2.5vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 2vw">Купить 1 любой майнер</button>
+                <div class="reward-container" style="top: 9vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning.png" class="lightning_reward_icon">
+                        <span style="position: relative; top: 0.15vw;">500 kH/s</span>
+                        <img src="images/lightning3.png" class="lightning_reward_icon" style="margin-right: -0.7vw; margin-left: 0.7vw;">
+                        <span style="position: relative; top: 0.15vw;">+2.5%</span>
+                    </button>
+                </div>  
+            </div>
+            <img src="images/go_over.png" id="go_to_task_img_2-2" class="go_to_task_img">
+            <img src="images/tick.png" id="task_completed_2-2" class="mark_completed_task">
+            <div id="loading_animation_2_2" class="loading_animation" style="display: none;"></div>
+        </div>
+
+        <div class="task_board" id="quest_telegram_premium" onclick="quest_telegram_premium()">
+            <div class="icon_task">
+                <img src="images/star1.png" style="height: 11vw; position: absolute; top: 2.5vw; left: 2.5vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 2vw">Telegram Premium</button>
+                <div class="reward-container" style="top: 9vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning.png" class="lightning_reward_icon">
+                        <span style="position: relative; top: 0.15vw;">250 kH/s</span>
+                        <img src="images/lightning3.png" class="lightning_reward_icon" style="margin-right: -0.7vw; margin-left: 0.7vw;">
+                        <span style="position: relative; top: 0.15vw;">+1%</span>
+                    </button>
+                </div>  
+            </div>
+            <img src="images/go_over.png" id="go_to_task_img_2-3" class="go_to_task_img">
+            <img src="images/tick.png" id="task_completed_2-3" class="mark_completed_task">
+            <div id="loading_animation_2_3" class="loading_animation" style="display: none;"></div>
+        </div>
+    </div>
+
+    <div id="social_media_activity_tasks"> 
+        <button class="title_text">Активность в социальных сетях</button>
+
+        <div class="task_board" id="quest_subscribe_telegram_channel_mining_empire" style="height: 23vw;" onclick="quest_subscribe_telegram_channel_mining_empire()">
+            <div class="icon_task" style="top: 3.5vw">
+                <img src="images/paper_airplane.png" style="height: 11vw; position: absolute; top: 2.5vw; left: 2.5vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 0vw">Подписаться на официальный Telegram канал Mining Empire</button>
+                <div class="reward-container" style="top: 14vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning.png" class="lightning_reward_icon">
+                        <span style="position: relative; top: 0.15vw;">100 kH/s</span>
+                    </button>
+                </div>  
+            </div>
+            <img src="images/go_over.png" id="go_to_task_img_3-1" class="go_to_task_img" style="top: 8.25vw;">
+            <img src="images/tick.png" id="task_completed_3-1" class="mark_completed_task">
+            <div id="loading_animation_3_1" class="loading_animation" style="display: none;"></div>
+        </div>
+
+        <div class="task_board" id="quest_boost_mining_empire_channel" onclick="quest_boost_mining_empire_channel()">
+            <div class="icon_task">
+                <img src="images/boost_channel_task_icon.png" style="height: 13vw; position: absolute; top: 1.5vw; left: 3.814vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 2vw">Проголосовать за канал</button>
+                <div class="reward-container" style="top: 9vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning.png" class="lightning_reward_icon">
+                        <span style="position: relative; top: 0.15vw;">150 kH/s</span>
+                        <img src="images/lightning3.png" class="lightning_reward_icon" style="margin-right: -0.7vw; margin-left: 0.7vw;">
+                        <span style="position: relative; top: 0.15vw;">+1%</span>
+                    </button>
+                </div>  
+            </div>
+            <img src="images/go_over.png" id="go_to_task_img_3-2" class="go_to_task_img">
+            <img src="images/tick.png" id="task_completed_3-2" class="mark_completed_task">
+            <div id="loading_animation_3_2" class="loading_animation" style="display: none;"></div>
+        </div>
+    </div>
+    </div>
+
+    <div id="friends_tasks"> 
+        <button class="title_text">Друзья</button>
+
+        <div class="task_board" id="quest_ivite_1_friend" onclick="quest_ivite_1_friend()">
+            <div class="icon_task">
+                <img src="images/friends_img_tasks_icon.png" style="width: 12vw; position: absolute; top: 2vw; left: 2vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 2vw">Пригласить 1 друга</button>
+                <div class="reward-container" style="top: 9vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning3.png" class="lightning_reward_icon" style="margin-right: -0.7vw;">
+                        <span style="position: relative; top: 0.15vw;">+0.5%</span>
+                    </button>
+                </div>                        
+            </div>
+            <button class="count_friends" id="count_friends1"></button>
+            <img src="images/tick.png" id="task_completed_4-1" class="mark_completed_task">
+            <div id="loading_animation_4_1" class="loading_animation" style="display: none;"></div>
+        </div>
+
+        <div class="task_board" id="quest_ivite_5_friends" onclick="quest_ivite_5_friends()">
+            <div class="icon_task">
+                <img src="images/friends_img_tasks_icon.png" style="width: 12vw; position: absolute; top: 2vw; left: 2vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 2vw">Пригласить 5 друзей</button>
+                <div class="reward-container" style="top: 9vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning3.png" class="lightning_reward_icon" style="margin-right: -0.7vw;">
+                        <span style="position: relative; top: 0.15vw;">+1.5%</span>
+                    </button>
+                </div>                        
+            </div>
+            <button class="count_friends" id="count_friends2"></button>
+            <img src="images/tick.png" id="task_completed_4-2" class="mark_completed_task">
+            <div id="loading_animation_4_2" class="loading_animation" style="display: none;"></div>
+        </div>
+
+        <div class="task_board" id="quest_ivite_15_friends" onclick="quest_ivite_15_friends()">
+            <div class="icon_task">
+                <img src="images/friends_img_tasks_icon.png" style="width: 12vw; position: absolute; top: 2vw; left: 2vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 2vw">Пригласить 15 друзей</button>
+                <div class="reward-container" style="top: 9vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning3.png" class="lightning_reward_icon" style="margin-right: -0.7vw;">
+                        <span style="position: relative; top: 0.15vw;">+3%</span>
+                    </button>
+                </div>                        
+            </div>
+            <button class="count_friends" id="count_friends3"></button>
+            <img src="images/tick.png" id="task_completed_4-3" class="mark_completed_task">
+            <div id="loading_animation_4_3" class="loading_animation" style="display: none;"></div>
+        </div>
+
+        <div class="task_board" id="quest_ivite_50_friends" onclick="quest_ivite_50_friends()">
+            <div class="icon_task">
+                <img src="images/friends_img_tasks_icon.png" style="width: 12vw; position: absolute; top: 2vw; left: 2vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 2vw">Пригласить 50 друзей</button>
+                <div class="reward-container" style="top: 9vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning3.png" class="lightning_reward_icon" style="margin-right: -0.7vw;">
+                        <span style="position: relative; top: 0.15vw;">+5%</span>
+                    </button>
+                </div>                        
+            </div>
+            <button class="count_friends" id="count_friends4"></button>
+            <img src="images/tick.png" id="task_completed_4-4" class="mark_completed_task">
+            <div id="loading_animation_4_4" class="loading_animation" style="display: none;"></div>
+        </div>
+
+        <div class="task_board" id="quest_ivite_150_friends" onclick="quest_ivite_150_friends()">
+            <div class="icon_task">
+                <img src="images/friends_img_tasks_icon.png" style="width: 12vw; position: absolute; top: 2vw; left: 2vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 2vw">Пригласить 150 друзей</button>
+                <div class="reward-container" style="top: 9vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning3.png" class="lightning_reward_icon" style="margin-right: -0.7vw;">
+                        <span style="position: relative; top: 0.15vw;">+10%</span>
+                    </button>
+                </div>                        
+            </div>
+            <button class="count_friends" id="count_friends5"></button>
+            <img src="images/tick.png" id="task_completed_4-5" class="mark_completed_task">
+            <div id="loading_animation_4_5" class="loading_animation" style="display: none;"></div>
+        </div>
+
+        <div class="task_board" id="quest_ivite_500_friends" onclick="quest_ivite_500_friends()">
+            <div class="icon_task">
+                <img src="images/friends_img_tasks_icon.png" style="width: 12vw; position: absolute; top: 2vw; left: 2vw;">
+            </div>
+            <div class="text_container_in_task_board">
+                <button class="task_description" style="top: 2vw">Пригласить 500 друзей</button>
+                <div class="reward-container" style="top: 9vw">
+                    <button class="reward_description">
+                        <span>Награда:</span>
+                        <img src="images/lightning3.png" class="lightning_reward_icon" style="margin-right: -0.7vw;">
+                        <span style="position: relative; top: 0.15vw;">+25%</span>
+                    </button>
+                </div>                        
+            </div>
+            <button class="count_friends" id="count_friends6"></button>
+            <img src="images/tick.png" id="task_completed_4-6" class="mark_completed_task">
+            <div id="loading_animation_4_6" class="loading_animation" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Инфо-блок об успешном выполнении задания -->
+    <div class="info_board" id="completed_task_info_board">
+        <img src="images/check_mark.png" style="width: 8vw; position: absolute; top: 3vw; left: 4vw;">
+        <div style="height: 14vw; width: 70vw; position: relative; left: 14vw; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <button class="text_in_info_board" style="position: relative; bottom: 0.15vw;">Задание успешно выполнено!</button>
+            <button class="info_about_reward_text_in_info_board" style="position: relative; top: 0.15vw;">
+                <span>Вы получили</span>
+                <img class="lightning_reward_icon" style="width: 3.15vw; margin-right: -0.7vw;" id="task_reward_img_lightning">
+                <span style="position: relative; top: 0.15vw;" id="task_reward"></span>
+            </button>
+        </div>
+        <img src="images/x.png" style="width: 3.5vw; position: absolute; top: 5.25vw; right: 4.5vw;" onclick="delete_class_completed_task_info_board()">
+    </div>
+    
+    <!-- Инфо-блок о неуспешном выполнении задания -->
+    <div class="info_board" id="unfulfilled_task_info_board" style="background: linear-gradient(to bottom, #c24242, #b6110b);">
+        <img src="images/x.png" style="width: 6.5vw; position: absolute; top: 3.75vw; left: 5vw;">
+        <div style="position: relative; left: 14vw;">
+            <button class="text_in_info_board" style="position: relative; bottom: 0.15vw;">Вы не выполнили задание!</button>
+        </div>
+        <img src="images/x.png" style="width: 3.5vw; position: absolute; top: 5.25vw; right: 4.5vw;" onclick="delete_class_unfulfilled_task_info_board()">
+    </div>
+
+</div>
+
+<!-- Инфо-блок о тех.неполадках -->
+<div class="info_board" id="notification_info_board" style="background: linear-gradient(to bottom, #f0ba25, #ec8610);">
+    <img src="images/!.png" style="width: 8vw; position: absolute; top: 3vw; left: 4vw;">
+    <div style="position: relative; left: 14vw;">
+        <button class="text_in_info_board" id="text_in_notification_info_board" style="position: relative; bottom: 0.15vw; right: 1.5vw;"></button>
+    </div>
+    <img src="images/x.png" style="width: 3.5vw; position: absolute; top: 5.25vw; right: 4.5vw;" onclick="delete_class_notification_info_board()">
+</div>
+
+
+<!-- Инфо-блок о новом добытом блоке -->
+<div class="info_board" id="generate_new_block_info_board" style="background: linear-gradient(to bottom, #f0ba25, #ec8610);">
+    <img src="images/cube_icon.png" style="width: 8vw; position: absolute; top: 3vw; left: 4vw;">
+    <div style="height: 14vw; width: 70vw; position: relative; left: 14vw; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+        <button class="text_in_info_board" id="text_in_generate_new_block_info_board" style="position: relative; bottom: 0.15vw;"></button>
+        <button class="info_about_reward_text_in_info_board" style="position: relative; top: 0.15vw;">
+            <span>Вы получили</span>
+            <img style="width: 3.15vw; margin-right: 0vw; margin-left: 0vw; vertical-align: middle;" id="reward_icon">
+            <span style="position: relative; top: 0.15vw;" id="block_reward"></span>
+        </button>
+    </div>
+    <img src="images/x.png" style="width: 3.5vw; position: absolute; top: 5.25vw; right: 4.5vw;" onclick="delete_class_generate_new_block_info_board()">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="code/Login.js"></script>
+<script src="code/main.js"></script>
+<script src="code/miners_page.js"></script>
+<script src="code/animation.js"></script>
+<script src="code/friends_page.js"></script>
+<script src="code/tasks_page.js"></script>
+</body>
+</html>
