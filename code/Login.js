@@ -1,27 +1,17 @@
 const tg = window.Telegram.WebApp;
 tg.expand();
 
+const telegramUserData = tg.initDataUnsafe.user;  //Получаем данные о пользователе
+
 let userInfo = null;
 let listFriends = null;
 
-const photo = tg.initDataUnsafe.user; // photo_url
-console.log(photo);
-
-//Получаем данные о пользователе
+//Авторизация пользователя
 async function userAuthorization() {
     const request = await fetch("https://mining-empire-backend.vercel.app/tg/userAuthorization", {
         method: "POST",
         headers: {"Content-Type": "application/json;charset=utf-8"},
-        body: JSON.stringify({ 
-            userID: tg.initDataUnsafe.user.id, 
-            firstName: tg.initDataUnsafe.user.first_name, 
-            lastName: tg.initDataUnsafe.user.last_name || "", 
-            username: tg.initDataUnsafe.user.username || "NO USERNAME", 
-            languageCode: tg.initDataUnsafe.user.language_code || "", 
-            isPremium: tg.initDataUnsafe.user.is_premium || false, 
-            registrationTime: Math.floor(Date.now() / 1000), 
-            profilePicture: "images/undefined_profilePicture.png" 
-        }) 
+        body: JSON.stringify({ telegramUserData: telegramUserData }) 
     });
 
     const data = await request.json();
@@ -29,6 +19,7 @@ async function userAuthorization() {
     userInfo = data.user; 
     listFriends = data.friends; 
 
+    console.log(telegramUserData);
     console.log(userInfo); 
     console.log(listFriends); 
 
